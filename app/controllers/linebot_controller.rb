@@ -50,7 +50,7 @@ class LinebotController < ApplicationController
           end
         # テキスト形式以外（画像等）の場合
         else
-          content = "今日、明日、明後日のいずれかを入力してください。\n\n今日 => 今日の天気\n明日 => 明日の天気\n明後日 => 明後日の天気\nをお知らせします。"
+          content = "今日、明日、明後日のいずれかを入力してください。\n\n 今日 => 今日の降水確率\n 明日 => 明日の降水確率\n 明後日 => 明後日の降水確率\nをお知らせします。"
         end
         message = {
           type: 'text',
